@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this survey form.</p>
+  
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
+    
+    <label for="dropdown">Which option best describes your current role?</label>
+    <select id="dropdown">
+      <option value="option1">Student</option>
+      <option value="option2">Full Time Job</option>
+      <option value="option3">Full Time Learner</option>
+      <option value="option4">Prefer not to say</option>
+    <option value="option5">Other</option>
+    </select>
+    
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+    <label for="radio1">
+      <input type="radio" id="radio1" name="radio-group" value="radio1"> Definitely
+    </label>
+    <label for="radio2">
+      <input type="radio" id="radio2" name="radio-group" value="radio2"> Maybe
+    </label>
+    <label for="radio2">
+      <input type="radio" id="radio2" name="radio-group" value="radio2"> Not Sure
+    </label>
+
+     <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+    <select id="dropdown">
+      <option value="option1">Challanges</option>
+      <option value="option2">Project</option>
+      <option value="option3">Community</option>
+      <option value="option4">Open Source</option>
+    </select>
+    
+    <label>What would you like to see improved? (Check all that apply)</label>
+    <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1"> Front-end Projects
+    </label>
+    <label for="checkbox2">
+      <input type="checkbox" id="checkbox2" value="checkbox2"> Back-end Projects
+    </label>
+
+    <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1"> Data Visualization
+    </label>
+
+     <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1">Challenges
+    </label>
+
+     <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1">Open Source Community
+    </label>
+
+     <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1">Videos
+    </label>
+
+     <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1">Open Source Community
+    </label>
+
+    <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1">Wiki
+    </label>
+
+    <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1">Forum
+    </label>
+
+    <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1">Open Source Community
+    </label>
+
+    <label for="checkbox1">
+      <input type="checkbox" id="checkbox1" value="checkbox1">Additional Courses
+    </label>
+    
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" placeholder="Enter your comments"></textarea>
+    
+    <input type="submit" id="submit" value="Submit">
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+</html>
